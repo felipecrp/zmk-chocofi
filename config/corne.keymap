@@ -57,11 +57,11 @@
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
         };
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
         };
     };
     keymap {
