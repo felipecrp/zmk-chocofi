@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 
 #define HRA &mt LGUI A
@@ -26,6 +27,14 @@
 #define LFN &lt 6 DEL
 
 #define KCEDIL &kp RA(COMMA)
+
+
+#define MLEFT &mmv MOVE_LEFT
+#define MDOWN &mmv MOVE_DOWN
+#define MUP &mmv MOVE_UP
+#define MRIGHT &mmv MOVE_RIGHT
+#define MSDOWN &msc SCRL_DOWN
+#define MSUP &msc SCRL_UP
 
 / {
     behaviors {
@@ -64,10 +73,10 @@
         };
         move_layer {
             bindings = <
-   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &kp PSCRN   &trans
-   &trans &trans    &trans     &trans       &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
-   &trans &trans    &trans     &trans       &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
-                               &trans       &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      MLEFT       MDOWN       MUP         MRIGHT      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &MSUP       &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &MSDOWN     &trans
+                               &trans       &trans      &trans      &mkp LCLK   &mkp MCLK   &mkp RCLK
             >;
         };
         symbol_layer {
