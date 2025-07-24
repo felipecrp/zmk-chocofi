@@ -16,7 +16,7 @@
 #define HRJ &mt RSHIFT J
 #define HRK &mt RCTRL K
 #define HRL &mt LALT L
-#define HRSC &mt RGUI ;
+#define HRSC &mt RGUI SEMI
 
 #define LMO &kp ESC
 #define LNU &kp SPACE
