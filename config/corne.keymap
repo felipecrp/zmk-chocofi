@@ -48,6 +48,10 @@
             flavor = "balanced";
             display-name = "Mod-Tap";
         };
+        hra: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&mt LGUI A>, <&kp A>;
+        };
     };
     combos {
         compatible = "zmk,combos";
@@ -68,7 +72,7 @@
         default_layer {
             bindings = <
    &none &kp Q      &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &none
-   &none HRA        HRS         HRD         HRF         &kp G       &kp H       HRJ         HRK         HRL         HRSC        &none
+   &none &hra       HRS         HRD         HRF         &kp G       &kp H       HRJ         HRK         HRL         HRSC        &none
    &none &kp Z      &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
                                 LMO         LNU         LMV         LSY         LAC         LFN
             >;
