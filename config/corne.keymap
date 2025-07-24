@@ -48,8 +48,10 @@
             flavor = "balanced";
             display-name = "Mod-Tap";
         };
+        // Home-row mods
         hra: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
             bindings = <&mt LGUI A>, <&kp A>;
         };
     };
