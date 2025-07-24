@@ -32,73 +32,73 @@
             display-name = "Mod-Tap";
         };
         // Home-row mods
-        hra: tap_dance_mod_tap {
+        hra: home_row_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LGUI A>, <&kp A>;
         };
-        hrs: tap_dance_mod_tap {
+        hrs: home_row_s {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LALT S>, <&kp S>;
         };
-        hrd: tap_dance_mod_tap {
+        hrd: home_row_d {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LCTRL D>, <&kp D>;
         };
-        hrf: tap_dance_mod_tap {
+        hrf: home_row_f {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LSHIFT F>, <&kp F>;
         };
-        hrj: tap_dance_mod_tap {
+        hrj: home_row_j {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt RSHIFT J>, <&kp J>;
         };
-        hrk: tap_dance_mod_tap {
+        hrk: home_row_k {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt RCTRL K>, <&kp K>;
         };
-        hrl: tap_dance_mod_tap {
+        hrl: home_row_l {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LALT L>, <&kp L>;
         };
-        hrsc: tap_dance_mod_tap {
+        hrsc: home_row_sc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt RGUI SEMI>, <&kp SEMI>;
         };
         // Change Layers
-        lmo: tap_dance_mod_tap {
+        lmo: layer_mo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 1 ESC>, <&kp ESC>;
         };
-        lnu: tap_dance_mod_tap {
+        lnu: layer_nu {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 2 SPACE>, <&kp SPACE>;
         };
-        lmv: tap_dance_mod_tap {
+        lmv: layer_mv {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 3 TAB>, <&kp TAB>;
         };
-        lsy: tap_dance_mod_tap {
+        lsy: layer_sy {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 4 RET>, <&kp RET>;
         };
-        lac: tap_dance_mod_tap {
+        lac: layer_ac {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 5 BSPC>, <&kp BSPC>;
         };
-        lfn: tap_dance_mod_tap {
+        lfn: layer_fn {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&lt 6 DEL>, <&kp DEL>;
