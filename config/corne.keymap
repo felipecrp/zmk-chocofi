@@ -87,8 +87,8 @@
         move_layer {
             bindings = <
    &trans &trans    &trans     &trans       &trans      &trans      MLEFT       MDOWN       MUP         MRIGHT      &trans      &trans
-   &trans &trans    &trans     &trans       &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &MSUP       &trans
-   &trans &trans    &trans     &trans       &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &MSDOWN     &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   MSUP       &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     MSDOWN     &trans
                                &trans       &trans      &trans      &mkp LCLK   &mkp MCLK   &mkp RCLK
             >;
         };
