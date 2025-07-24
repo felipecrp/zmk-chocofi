@@ -18,12 +18,14 @@
 #define HRL &mt LALT L
 #define HRSC &mt RGUI SEMI
 
-#define LMO &kp ESC
-#define LNU &lt 1 SPACE
-#define LMV &kp TAB
-#define LSY &kp RET
-#define LAC &kp BSPC
-#define LFN &kp DEL
+#define LMO &lt 1 ESC
+#define LNU &lt 2 SPACE
+#define LMV &lt 3 TAB
+#define LSY &lt 4 RET
+#define LAC &lt 5 BSPC
+#define LFN &lt 6 DEL
+
+#define KCEDIL &kp RA(COMMA)
 
 / {
     behaviors {
@@ -44,12 +46,52 @@
                                 LMO         LNU         LMV         LSY         LAC         LFN
             >;
         };
+        mod_layer {
+            bindings = <
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans       &trans      &trans      &trans      &trans      &trans
+            >;
+        };
         number_layer {
             bindings = <
    &trans &trans    &trans     &trans       &trans      &trans      &kp PLUS    &kp N7      &kp N8      &kp N9      &kp STAR    &trans
    &trans &trans    &trans     &trans       &trans      &trans      &kp MINUS   &kp N4      &kp N5      &kp N6      &kp EQUAL   &trans
    &trans &trans    &trans     &trans       &trans      &trans      &kp UNDER   &kp N1      &kp N2      &kp N3      &kp SLASH   &trans
                                &trans       &trans      &trans      &kp COMMA   &kp N0      &kp DOT
+            >;
+        };
+        move_layer {
+            bindings = <
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &kp PSCRN   &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
+                               &trans       &trans      &trans      &trans      &trans      &trans
+            >;
+        };
+        symbol_layer {
+            bindings = <
+   &trans &kp EXCL  &kp AT     &kp HASH     &kp DLLR    &kp PRCNT   &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &kp AMPS  &kp LT     &kp GT       &kp LPAR    &kp RPAR    &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &kp BSLH  &kp LBKT   &kp LBRC     &kp LBKT    &kp LBRC    &trans      &trans      &trans      &trans      &trans      &trans
+                               &kp COLON    &kp MINUS   &kp EQUAL   &trans      &trans      &trans
+            >;
+        };
+        accent_layer {
+            bindings = <
+   &trans &trans    &kp CARET  &trans       &kp GRAVE   &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &kp TILDE  &kp DQT      &kp SQT     &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     KCEDIL       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans       &trans      &trans      &trans      &trans      &trans
+            >;
+        };
+        function_layer {
+            bindings = <
+   &trans &kp F1    &kp F2     &kp F3       &kp F4      &kp INS     &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &kp F5    &kp F6     &kp F7       &kp F8      &caps_word  &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &kp F9    &kp F10    &kp F11      &kp F12     &kp CAPS    &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans       &trans      &trans      &trans      &trans      &trans
             >;
         };
         cp_layer {
