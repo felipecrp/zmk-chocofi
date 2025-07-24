@@ -19,7 +19,7 @@
 #define HRSC &mt RGUI SEMI
 
 #define LMO &kp ESC
-#define LNU &kp SPACE
+#define LNU &lt 1 SPACE
 #define LMV &kp TAB
 #define LSY &kp RET
 #define LAC &kp BSPC
@@ -42,7 +42,23 @@
    &none HRA        HRS         HRD         HRF         &kp G       &kp H       HRJ         HRK         HRL         HRSC        &none
    &none &kp Z      &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
                                 LMO         LNU         LMV         LSY         LAC         LFN
-                        >;
+            >;
+        };
+        number_layer {
+            bindings = <
+   &trans &trans    &trans     &trans       &trans      &trans      &kp PLUS    &kp N7      &kp N8      &kp N9      &kp STAR    &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp MINUS   &kp N4      &kp N5      &kp N6      &kp EQUAL   &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &kp UNDER   &kp N1      &kp N2      &kp N3      &kp SLASH   &trans
+                               &trans       &trans      &trans      &kp COMMA   &kp N0      &kp DOT
+            >;
+        };
+        cp_layer {
+            bindings = <
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &trans    &trans     &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans       &trans      &trans      &trans      &trans      &trans
+            >;
         };
         
 //                 lower_layer {
