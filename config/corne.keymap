@@ -103,7 +103,7 @@
             bindings = <
    &trans &kp EXCL  &kp AT     &kp HASH     &kp DLLR    &kp PRCNT   &trans      &trans      &trans      &trans      &trans      &trans
    &trans &kp AMPS  &kp LT     &kp GT       &kp LPAR    &kp RPAR    &trans      &trans      &trans      &trans      &trans      &trans
-   &trans &kp BSLH  &kp LBKT   &kp LBRC     &kp LBKT    &kp LBRC    &trans      &trans      &trans      &trans      &trans      &trans
+   &trans &kp BSLH  &kp LBKT   &kp RBKT     &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans
                                &kp COLON    &kp MINUS   &kp EQUAL   &trans      &trans      &trans
             >;
         };
